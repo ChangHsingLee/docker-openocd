@@ -1,5 +1,5 @@
 # docker-openocd
-The example for setup PPPoE server which running in Docker container.
+The example for setup OpenOCD which running in Docker container.
 
 Initial Date:
 
