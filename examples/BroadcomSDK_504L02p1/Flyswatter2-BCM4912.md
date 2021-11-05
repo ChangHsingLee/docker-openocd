@@ -104,4 +104,4 @@ Use Flyswatter2 ICD to rescue HGW-2502GX4TU-B which is used BCM4912 SoC.
     target remote :3333
     source HGW_2502GX4TU_B.gdb
     ```
-    Try to [halt CPU](#L31) and re-try this step if you got error.
+    Try to [halt CPU](Flyswatter2-BCM4912.md#to-halt-cpu-bcm4912) and re-try this step if you got error.
