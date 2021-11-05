@@ -84,7 +84,7 @@ CONTAINER_NAME=openocd; \\\
 VOLUME_TOPDIR=$HOME/workspace/dockerVolumes/alpine-openocd; \\\
 docker run -it \\\
 --name $CONTAINER_NAME \\\
--v $HOME/workspace/dockerVolumes/openocd:/srv \\\
+-v $VOLUME_TOPDIR:/srv \\\
 **--privileged** --rm $DOCKER_IMG_NAME \\\
 openocd -s /srv [*options*]
 

@@ -1,0 +1,15 @@
+diff --git a/bootloaders/build/work/generate_cmm.sh b/bootloaders/build/work/generate_cmm.sh
+index 9015f8fa7..3d1ba383c 100755
+--- a/bootloaders/build/work/generate_cmm.sh
++++ b/bootloaders/build/work/generate_cmm.sh
+@@ -161,8 +161,8 @@ do
+ 	m=$(printf "%d" 0x${m_temp})
+         let m=${m}+0x20000
+ 	m=$(printf "%x" ${m})
+-        ddrfile=`cd ${cmm_out} && ls ${dpfe_prefix}${BRCM_CHIP}_DDR*${m}.cmm 2> /dev/null`
+-        ddrgdb=`cd ${cmm_out} && ls ${dpfe_prefix}${BRCM_CHIP}_DDR*${m}.gdb 2> /dev/null` 
++        ddrfile=`cd ${cmm_out} && ls ${dpfe_prefix}${BRCM_CHIP}_DDR*${m}.cmm | head -n1 2> /dev/null`
++        ddrgdb=`cd ${cmm_out} && ls ${dpfe_prefix}${BRCM_CHIP}_DDR*${m}.gdb | head -n1 2> /dev/null`
+     fi
+     if [ "x${ddrfile}" == "x" ]; then
+ 	m_temp=`echo ${mcb}|sed -e 's/^7/3/'`
