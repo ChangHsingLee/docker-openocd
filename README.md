@@ -62,7 +62,7 @@ DOCKER_IMG_NAME="changhsinglee/alpine-openocd:latest"; \
 cd $SRC_DIR && docker build -t $DOCKER_IMG_NAME .
 ```
 > OR\
-You can load the docker image "alpine-openocd-dockerImg.tar.bz2" which be saved/tested.
+You can load the docker image "[alpine-openocd-dockerImg.tar.bz2](https://github.com/ChangHsingLee/backup-dockerImg/blob/main/alpine-openocd-dockerImg.tar.bz2)" which be saved/tested.
 ```shell
 bzip2 -dcv alpine-openocd-dockerImg.tar.bz2 | docker load
 ```
